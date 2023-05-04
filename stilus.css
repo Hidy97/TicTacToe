@@ -1,0 +1,64 @@
+body {
+    margin: auto;
+    width: 800px;
+    max-width: 80%;
+    background-color: rgba(21, 21, 54, 0.952);
+    color: rgb(11, 241, 230);
+    border-left: 1px dashed rgb(0, 225, 255);
+    border-right: 1px dashed rgb(0, 225, 255);
+}
+
+main{
+    display: grid;
+    grid-template-areas:    "h h h h"
+                            "s s s s"
+                            "ar ar as as"
+                            "f f f f";
+}
+
+
+header{
+    grid-area: h;
+}
+
+section{
+    grid-area: s;
+}
+
+article{
+    grid-area: ar;
+}
+
+aside{
+    grid-area: as;
+}
+
+footer{
+    grid-area: f;
+}
+
+header, footer, p{
+    text-align: center;
+}
+
+section, article{
+    padding: 10px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.elem{
+    border: 1px solid rgb(0, 138, 252);
+}
+
+p{
+    color: rgb(11, 241, 230);
+}
+
+.elem:hover{
+    background-color: rgba(26, 11, 241, 0.356);
+}
